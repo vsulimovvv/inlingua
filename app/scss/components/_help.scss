@@ -1,0 +1,11 @@
+.help {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include adaptive-value('gap', 48, 20, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

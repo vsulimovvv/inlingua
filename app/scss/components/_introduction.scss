@@ -1,0 +1,22 @@
+.introduction {
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__title {
+    @include adaptive-value('margin-bottom', 32, 20, 1);
+  }
+
+  &__text {
+    @include adaptive-value('margin-bottom', 70, 40, 1);
+    font-size: 14px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 100px;
+    justify-content: space-between;
+    @include breakpointsMaxW($bp-768){
+      grid-template-columns: 1fr;
+    }
+  }
+}

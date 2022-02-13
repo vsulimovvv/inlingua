@@ -1,0 +1,16 @@
+.partners {
+  @include adaptive-value('padding-top', 90, 60, 1);
+  @include adaptive-value('padding-bottom', 90, 60, 1);
+
+  &__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 151px);
+    justify-content: space-between;
+    gap: 40px;
+
+    @include breakpointsMaxW($bp-991) {
+      justify-content: center;
+    }
+  }
+}

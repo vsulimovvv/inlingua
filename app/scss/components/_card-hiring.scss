@@ -1,0 +1,36 @@
+// * ===== Найм - Offene Stellen - Spontanbewerbungen
+.hiring-card {
+  padding: 40px;
+  background-color: var(--color-bg);
+  max-width: 434px;
+  width: 100%;
+  min-height: 456px;
+  display: flex;
+  flex-direction: column;
+  @include breakpointsMaxW($bp-768) {
+    padding: 20px;
+  }
+  @include adaptive-value(' min-height', 456, 380, 1);
+
+  &__title {
+    line-height: 1.1;
+    font-weight: 500;
+    @include adaptive-value('margin-bottom', 43, 20, 1);
+    @include adaptive-value('font-size', 35, 20, 1);
+  }
+
+  &__text {
+    margin-bottom: 20px;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__btn {
+    max-width: 196px;
+    margin: auto auto 0 auto;
+  }
+}

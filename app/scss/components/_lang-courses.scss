@@ -1,0 +1,19 @@
+.lang-courses {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 80px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px 50px;
+    }
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    height: 100%;
+    justify-self: center;
+  }
+}

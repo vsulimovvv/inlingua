@@ -1,0 +1,33 @@
+.method {
+  &__title {
+    @include adaptive-value('margin-bottom', 32, 20, 1);
+  }
+
+  &__undertitle {
+    @include adaptive-value('margin-bottom', 50, 30, 1);
+  }
+  
+  .method-box {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &__title {
+      font-size: 20px;
+      @include adaptive-value('margin-bottom', 30, 10, 1);
+    }
+
+    &__text {
+      p {
+        &:not(:last-child) {
+          @include adaptive-value('margin-bottom', 30, 10, 1);
+        }
+      }
+    }
+
+    &__heading {
+      @include adaptive-value('margin-top', 20, 10, 1);
+      @include adaptive-value('margin-bottom', 20, 10, 1);
+    }
+  }
+}

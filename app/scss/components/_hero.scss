@@ -1,0 +1,127 @@
+.hero {
+  background-color: #dbdce1;
+  background-image: url('../images/content/hero/bg.png');
+  background-repeat: no-repeat;
+  background-position: 89% -65%;
+  background-size: 926px 520px;
+  position: relative;
+
+  .search-block {
+    position: absolute;
+    left: 50%;
+    max-width: 1200px;
+    width: calc(100% - 30px);
+    transform: translateX(-50%);
+    bottom: -70px;
+    z-index: 10;
+  }
+
+  @include breakpointsMaxW($bp-container) {
+    background-size: cover;
+    background-position: center top;
+  }
+
+  &__text {
+    line-height: 28px;
+    max-width: 400px;
+    @include adaptive-value('margin-bottom', 40, 20, 1);
+  }
+
+  &__slider {
+    box-sizing: border-box;
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    position: absolute;
+    bottom: 100px;
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpointsMaxW($bp-768) {
+      bottom: 180px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: static;
+      &::after {
+        @include elDef();
+        width: 26px;
+        height: 17px;
+        background-color: var(--color-title);
+
+        @include breakpointsMaxW($bp-991) {
+          background-color: var(--color-white);
+        }
+      }
+    }
+
+    .swiper-button-prev {
+      @include maskImage(url('../images/icons/arrow-left.svg'), contain);
+    }
+
+    .swiper-button-next {
+      @include maskImage(url('../images/icons/arrow-right.svg'), contain);
+    }
+  }
+
+  &__offer {
+    @include adaptive-value('padding-top', 114, 60, 1);
+    @include breakpointsMaxW($bp-991) {
+      color: var(--color-white);
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    @include breakpointsMaxW($bp-991) {
+      color: var(--color-white);
+    }
+  }
+
+  &__slide {
+    box-sizing: border-box;
+
+    .container {
+      padding: 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 610px;
+    box-sizing: border-box;
+
+    @include breakpointsMaxW($bp-576) {
+      padding-bottom: 350px;
+    }
+  }
+
+  &__preview {
+    position: absolute;
+    bottom: 0;
+    right: 48px;
+    min-width: 508px;
+    height: 597px;
+
+    @include breakpointsMaxW($bp-container) {
+      right: 0;
+    }
+
+    @include adaptive-value('min-width', 508, 250, 1);
+    @include adaptive-value('height', 597, 300, 1);
+
+    img {
+      @include img(contain);
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      bottom: 30px;
+    }
+  }
+}

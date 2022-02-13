@@ -1,0 +1,135 @@
+.footer {
+  background-color: var(--color-bg);
+  &__top {
+    @include adaptive-value('padding-top', 53, 30, 1);
+    @include adaptive-value('padding-bottom', 60, 30, 1);
+    display: grid;
+    grid-template-columns:
+      minmax(auto, 265px) minmax(auto, 116px) minmax(auto, 325px)
+      minmax(auto, 158px) minmax(auto, 132px);
+    justify-content: space-between;
+
+    @include breakpointsMaxW($bp-container) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__col {
+    &:nth-child(1) {
+      .footer__name {
+      }
+    }
+  }
+
+  &__name {
+    display: block;
+    @include adaptive-value('padding-bottom', 26, 15, 1);
+    font-size: 20px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+
+  &__list {
+    @include adaptive-value('padding-top', 31, 20, 1);
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &.mt45 {
+      margin-top: 45px;
+      @include adaptive-value('margin-top', 45, 0, 1);
+    }
+  }
+
+  &__link {
+    color: var(--color-text);
+    font-size: 13px;
+
+    &:hover {
+      color: var(--color-black);
+    }
+  }
+
+  &__bottom {
+    padding: 22px 0;
+    background-color: var(--color-white);
+  }
+
+  &__right {
+    margin-left: auto;
+    max-width: 740px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpointsMaxW($bp-991) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-left: 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpointsMaxW($bp-991) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    @include adaptive-value('gap', 62, 20, 1);
+    @include adaptive-value('margin-right', 80, 20, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__socials {
+    @include breakpointsMaxW($bp-991) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__by {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 11px;
+
+    img {
+      object-fit: contain;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      img {
+        width: 130px;
+      }
+    }
+  }
+
+  .header__lang {
+    margin-left: auto;
+    @include breakpointsMaxW($bp-991) {
+      margin-left: 0;
+    }
+  }
+}

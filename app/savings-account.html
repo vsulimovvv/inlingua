@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Choices -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Inlingua</title>
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <div class="overlay"></div>
+      <header class="header">
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo-mobile.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Kurssuche Sprachkurse
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Kurssuche Sprachkurse
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Kurssuche Sprachkurse
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Kurssuche Sprachkurse
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Sprachtests Diplome | Zertifikate
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Sprachtests Diplome | Zertifikate</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Sprachtests Diplome | Zertifikate</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Firmenkurse B2B
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Firmenkurse B2B </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Firmenkurse B2B </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            über inlingua
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> über inlingua </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> über inlingua </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Kontakt
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Kontakt</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__top">
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <a class="header__logo logo" href="#">
+          <picture>
+            <source
+              srcset="images/logo-mobile.png"
+              media="(max-width: 991px)"
+            />
+            <img src="images/logo.png" alt="Логотип" />
+          </picture>
+        </a>
+
+        <div class="header__tools">
+          <button class="header__lang" type="button">DE</button>
+          <button class="header__search" type="button">
+            <svg width="15" height="15">
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <button class="header__btn btn" type="button">Login</button>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Kurssuche Sprachkurse </a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Firmenkurse B2B</a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Sprachtests Diplome | Zertifikate
+              </a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">über inlingua</a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Kontakt</a>
+
+              <ul class="menu__dropdown dropdown dropdown--right">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section
+  class="hero-history--saving-account"
+  style="background-image: url('images/content/hero-saving-bg.jpg')"
+>
+  <div class="container">
+    <div class="hero-history__offer">
+      <h1 class="hero-history__title section-title">Sparkonto</h1>
+      <p class="hero-history__undertitle">Für den Aufbau Ihres Sparguthabens</p>
+      <div class="hero-history__text">
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="data">
+  <div class="container">
+    <h2 class="visually-hidden">Data</h2>
+
+    <div class="data__table table-data">
+      <div class="table-data__wrapper">
+        <div class="table-data__grid">
+          <div class="table-data__col">
+            <div class="table-data__head">
+              <div class="table-data__cell">Status</div>
+            </div>
+            <div class="table-data__cell table-data__cell--none"></div>
+            <div class="table-data__cell table-data__cell--warning"></div>
+            <div class="table-data__cell table-data__cell--good"></div>
+            <div class="table-data__cell table-data__cell"></div>
+            <div class="table-data__cell table-data__cell"></div>
+            <div class="table-data__cell table-data__cell--none"></div>
+            <div class="table-data__cell table-data__cell"></div>
+            <div class="table-data__cell table-data__cell"></div>
+            <div class="table-data__cell table-data__cell"></div>
+          </div>
+          <div class="table-data__col">
+            <div class="table-data__head">
+              <div class="table-data__cell">Kursbeschrieb</div>
+            </div>
+            <div class="table-data__cell">Deutsch Hamburg</div>
+            <div class="table-data__cell">Deutsch Hamburg</div>
+            <div class="table-data__cell">Deutsch Hamburg</div>
+            <div class="table-data__cell">Deutsch Hamburg</div>
+            <div class="table-data__cell">Deutsch Hamburg</div>
+            <div class="table-data__cell">Deutsch Hamburg</div>
+            <div class="table-data__cell">Deutsch Hamburg</div>
+            <div class="table-data__cell">Deutsch Hamburg</div>
+            <div class="table-data__cell">Deutsch Hamburg</div>
+          </div>
+          <div class="table-data__col">
+            <div class="table-data__head">
+              <div class="table-data__cell">Niveau</div>
+            </div>
+            <div class="table-data__cell">A1</div>
+            <div class="table-data__cell">A2</div>
+            <div class="table-data__cell">B1.1 - B1.2</div>
+            <div class="table-data__cell">B1.3 - B1.4</div>
+            <div class="table-data__cell">B2.1 - B2.2</div>
+            <div class="table-data__cell">B2.3 - B2.4</div>
+            <div class="table-data__cell">C1.1 - C1.2</div>
+            <div class="table-data__cell">C1.3 - C1.4</div>
+            <div class="table-data__cell">C2</div>
+          </div>
+          <div class="table-data__col">
+            <div class="table-data__head">
+              <div class="table-data__cell">Durchfuhr- ungsart</div>
+            </div>
+            <div class="table-data__cell">Hibrid</div>
+            <div class="table-data__cell">Hibrid</div>
+            <div class="table-data__cell">Hibrid</div>
+            <div class="table-data__cell">Hibrid</div>
+            <div class="table-data__cell">Hibrid</div>
+            <div class="table-data__cell">Hibrid</div>
+            <div class="table-data__cell">Hibrid</div>
+            <div class="table-data__cell">Hibrid</div>
+            <div class="table-data__cell">Hibrid</div>
+          </div>
+          <div class="table-data__col">
+            <div class="table-data__head">
+              <div class="table-data__cell">Daten</div>
+            </div>
+
+            <div class="table-data__cell">18.03.2022- 23.04.2022</div>
+            <div class="table-data__cell">18.03.2022- 23.04.2022</div>
+            <div class="table-data__cell">18.03.2022- 23.04.2022</div>
+            <div class="table-data__cell">18.03.2022- 23.04.2022</div>
+            <div class="table-data__cell">18.03.2022- 23.04.2022</div>
+            <div class="table-data__cell">18.03.2022- 23.04.2022</div>
+            <div class="table-data__cell">18.03.2022- 23.04.2022</div>
+            <div class="table-data__cell">18.03.2022- 23.04.2022</div>
+            <div class="table-data__cell">18.03.2022- 23.04.2022</div>
+          </div>
+          <div class="table-data__col">
+            <div class="table-data__head">
+              <div class="table-data__cell">Tag(e)</div>
+            </div>
+
+            <div class="table-data__cell">33 Kurstage</div>
+            <div class="table-data__cell">33 Kurstage</div>
+            <div class="table-data__cell">33 Kurstage</div>
+            <div class="table-data__cell">33 Kurstage</div>
+            <div class="table-data__cell">33 Kurstage</div>
+            <div class="table-data__cell">33 Kurstage</div>
+            <div class="table-data__cell">33 Kurstage</div>
+            <div class="table-data__cell">33 Kurstage</div>
+            <div class="table-data__cell">33 Kurstage</div>
+          </div>
+          <div class="table-data__col">
+            <div class="table-data__head">
+              <div class="table-data__cell">Zeit</div>
+            </div>
+            <div class="table-data__cell">18:00- 20:20</div>
+            <div class="table-data__cell">18:00- 20:20</div>
+            <div class="table-data__cell">18:00- 20:20</div>
+            <div class="table-data__cell">18:00- 20:20</div>
+            <div class="table-data__cell">18:00- 20:20</div>
+            <div class="table-data__cell">18:00- 20:20</div>
+            <div class="table-data__cell">18:00- 20:20</div>
+            <div class="table-data__cell">18:00- 20:20</div>
+            <div class="table-data__cell">18:00- 20:20</div>
+          </div>
+          <div class="table-data__col">
+            <div class="table-data__head">
+              <div class="table-data__cell">Standort</div>
+            </div>
+            <div class="table-data__cell">Bern</div>
+            <div class="table-data__cell">Bern</div>
+            <div class="table-data__cell">Bern</div>
+            <div class="table-data__cell">Bern</div>
+            <div class="table-data__cell">Bern</div>
+            <div class="table-data__cell">Bern</div>
+            <div class="table-data__cell">Bern</div>
+            <div class="table-data__cell">Bern</div>
+            <div class="table-data__cell">Bern</div>
+          </div>
+          <div class="table-data__col">
+            <div class="table-data__head">
+              <div class="table-data__cell">Preis CHF</div>
+            </div>
+            <div class="table-data__cell">824.-</div>
+            <div class="table-data__cell">824.-</div>
+            <div class="table-data__cell">824.-</div>
+            <div class="table-data__cell">824.-</div>
+            <div class="table-data__cell">824.-</div>
+            <div class="table-data__cell">824.-</div>
+            <div class="table-data__cell">824.-</div>
+            <div class="table-data__cell">824.-</div>
+            <div class="table-data__cell">824.-</div>
+          </div>
+        </div>
+
+        <div class="table-data__books">
+          <div class="table-data__books-col">
+            <div class="table-data__books-cell">Nehr info,s</div>
+            <div class="table-data__books-cell">Nehr info,s</div>
+            <div class="table-data__books-cell">Nehr info,s</div>
+            <div class="table-data__books-cell">Nehr info,s</div>
+            <div class="table-data__books-cell">Nehr info,s</div>
+            <div class="table-data__books-cell">Nehr info,s</div>
+            <div class="table-data__books-cell">Nehr info,s</div>
+            <div class="table-data__books-cell">Nehr info,s</div>
+            <div class="table-data__books-cell">Nehr info,s</div>
+          </div>
+          <div class="table-data__books-col">
+            <div class="table-data__books-cell table-data__books-cell--bg">
+              Buchen
+            </div>
+            <div class="table-data__books-cell table-data__books-cell--bg">
+              Buchen
+            </div>
+            <div class="table-data__books-cell table-data__books-cell--bg">
+              Buchen
+            </div>
+            <div class="table-data__books-cell table-data__books-cell--bg">
+              Buchen
+            </div>
+            <div class="table-data__books-cell table-data__books-cell--bg">
+              Buchen
+            </div>
+            <div class="table-data__books-cell table-data__books-cell--bg">
+              Buchen
+            </div>
+            <div class="table-data__books-cell table-data__books-cell--bg">
+              Buchen
+            </div>
+            <div class="table-data__books-cell table-data__books-cell--bg">
+              Buchen
+            </div>
+            <div class="table-data__books-cell table-data__books-cell--bg">
+              Buchen
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="data__btn btn" href="#">Mehr anzeigen</a>
+
+    <div class="table-data__explain explain-data">
+      <div class="explain-data__table">
+        <div class="explain-data__col">
+          <div class="explain-data__cell explain-data__cell--none"></div>
+          <div class="explain-data__cell">Status</div>
+        </div>
+        <div class="explain-data__col">
+          <div class="explain-data__cell explain-data__cell--warning"></div>
+          <div class="explain-data__cell">Kursbeschrieb</div>
+        </div>
+        <div class="explain-data__col">
+          <div class="explain-data__cell explain-data__cell--good"></div>
+          <div class="explain-data__cell">Niveau</div>
+        </div>
+        <div class="explain-data__col">
+          <div class="explain-data__cell explain-data__cell--none"></div>
+          <div class="explain-data__cell">Durchfuhrungsart</div>
+        </div>
+        <div class="explain-data__col">
+          <div class="explain-data__cell explain-data__cell--warning"></div>
+          <div class="explain-data__cell">Daten</div>
+        </div>
+        <div class="explain-data__col">
+          <div class="explain-data__cell explain-data__cell--good"></div>
+          <div class="explain-data__cell">Tag(e)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="help">
+  <div class="container">
+    <h2 class="visually-hidden">Help</h2>
+
+    <ul class="help__list">
+      <li class="help__item">
+        <div class="help-card help-card--phone">
+          <h3 class="help-card__title">
+            Wir helfen ihnen gerne per Telefon weiter
+          </h3>
+          <div class="help-card__box">
+            <a class="help-card__text" href="tel:0800002592">0800 002 592</a>
+            <p class="help-card__notify">
+              Montag bis Freitag 08.00 - 18.00 Uhr
+            </p>
+          </div>
+          <div class="help-card__box">
+            <p class="help-card__text">Gerne rufen wir Sie in Kurze zuruck.</p>
+            <a class="help-card__btn btn btn--arrow" href="tel:0800002592"
+              >Ruckruf vereinbaren</a
+            >
+          </div>
+        </div>
+      </li>
+      <li class="help__item">
+        <div class="help-card help-card--language-test">
+          <h3 class="help-card__title">Sprachniveau unbekannt?</h3>
+          <p class="help-card__text">Hier kostenfrei testen…</p>
+          <a class="help-card__btn btn btn--arrow" href="tel:0800002592">
+            Ruckruf vereinbaren
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="levels">
+  <div class="container">
+    <h2 class="levels__title section-title">Sparkonto</h2>
+    <p class="levels__undertitle">Für den Aufbau Ihres Sparguthabens</p>
+
+    <div class="levels__text">
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam Lorem ipsum
+        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam Lorem ipsum dolor sit
+        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+        labore et dolore magna aliquyam.
+      </p>
+    </div>
+
+    <div class="levels__table table-lang">
+      <div class="table-lang__grid">
+        <div class="table-lang__head">
+          <div class="table-head"></div>
+          <div class="table-head">Niveau</div>
+          <div class="table-head">ich kann...</div>
+        </div>
+        <div class="table-lang__body">
+          <div class="table-lang__left">
+            <div class="table-cell">Anfanger</div>
+            <div class="table-cell">Forstgeschrittene</div>
+            <div class="table-cell">Profis</div>
+          </div>
+          <div class="table-lang__middle">
+            <div class="table-lang__row">
+              <div class="table-cell">A1</div>
+              <div class="table-cell">A1.1</div>
+              <div class="table-cell table-cell--big">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam Lorem ipsum dolor sit amet, consetetur sadipscing
+                elitr.
+              </div>
+            </div>
+            <div class="table-lang__row">
+              <div class="table-cell">A2</div>
+              <div class="table-cell">A2.2</div>
+              <div class="table-cell table-cell--big">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam Lorem ipsum dolor sit amet, consetetur sadipscing
+                elitr.
+              </div>
+            </div>
+            <div class="table-lang__row">
+              <div class="table-cell">B1</div>
+              <div class="table-cell">B1.1</div>
+              <div class="table-cell table-cell--big">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam Lorem ipsum dolor sit amet, consetetur sadipscing
+                elitr.
+              </div>
+            </div>
+            <div class="table-lang__row">
+              <div class="table-cell">B2</div>
+              <div class="table-cell">B2.2</div>
+              <div class="table-cell table-cell--big">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam Lorem ipsum dolor sit amet, consetetur sadipscing
+                elitr.
+              </div>
+            </div>
+            <div class="table-lang__row">
+              <div class="table-cell">C1</div>
+              <div class="table-cell">C1.1</div>
+              <div class="table-cell table-cell--big">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam Lorem ipsum dolor sit amet, consetetur sadipscing
+                elitr.
+              </div>
+            </div>
+            <div class="table-lang__row">
+              <div class="table-cell">C2</div>
+              <div class="table-cell">C2.2</div>
+              <div class="table-cell table-cell--big">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam Lorem ipsum dolor sit amet, consetetur sadipscing
+                elitr.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="online">
+  <div class="container">
+    <h2 class="online__title section-title">Sparkonto</h2>
+    <p class="online__undertitle">Für den Aufbau Ihres Sparguthabens</p>
+    <div class="online__text">
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam Lorem ipsum
+        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam Lorem ipsum dolor sit
+        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+        labore et dolore magna aliquyam.
+      </p>
+    </div>
+
+    <ul class="online__list">
+      <li class="online__item">
+        <article class="online-card">
+          <div class="online-card__img">
+            <img
+              src="images/content/online/1.jpg"
+              alt="Discovered the right role for you?"
+            />
+          </div>
+          <h3 class="online-card__title">Discovered the right role for you?</h3>
+          <span class="online-card__apply">Apply online</span>
+          <div class="online-card__text">
+            <p>
+              Paperless is the way forward, so please make sure you apply using
+              our online system. We re looking forward to hearing from you!
+            </p>
+          </div>
+        </article>
+      </li>
+      <li class="online__item">
+        <article class="online-card">
+          <div class="online-card__img">
+            <img
+              src="images/content/online/1.jpg"
+              alt="Discovered the right role for you?"
+            />
+          </div>
+          <h3 class="online-card__title">Discovered the right role for you?</h3>
+          <span class="online-card__apply">Apply online</span>
+          <div class="online-card__text">
+            <p>
+              Paperless is the way forward, so please make sure you apply using
+              our online system. We re looking forward to hearing from you!
+            </p>
+          </div>
+        </article>
+      </li>
+      <li class="online__item">
+        <article class="online-card">
+          <div class="online-card__img">
+            <img
+              src="images/content/online/1.jpg"
+              alt="Discovered the right role for you?"
+            />
+          </div>
+          <h3 class="online-card__title">Discovered the right role for you?</h3>
+          <span class="online-card__apply">Apply online</span>
+          <div class="online-card__text">
+            <p>
+              Paperless is the way forward, so please make sure you apply using
+              our online system. We re looking forward to hearing from you!
+            </p>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="saving">
+  <div class="container">
+    <h2 class="saving__title section-title">
+      Für den Aufbau Ihres Sparguthabens
+    </h2>
+
+    <div class="saving__inner">
+      <div class="saving__slider swiper">
+        <ul class="saving__slides swiper-wrapper">
+          <li class="saving__slide swiper-slide">
+            <article class="team-card">
+              <div class="team-card__img">
+                <img src="images/content/team/1.jpg" alt="Ivan" />
+              </div>
+              <div class="team-card__info">
+                <h3 class="team-card__title">Ivan Ivanov</h3>
+                <span class="team-card__prof">Director</span>
+                <span class="team-card__lang">
+                  Sprachen, die die Person kann
+                </span>
+                <a class="team-card__phone" href="tel:+71234567890">
+                  8 (123) 456 78 90
+                </a>
+                <a class="team-card__mail" href="mailto:info@mail.com">
+                  info@mail.com
+                </a>
+                <span class="team-card__text"> Lieblingszitat </span>
+              </div>
+            </article>
+          </li>
+          <li class="saving__slide swiper-slide">
+            <article class="team-card">
+              <div class="team-card__img">
+                <img src="images/content/team/1.jpg" alt="Ivan" />
+              </div>
+              <div class="team-card__info">
+                <h3 class="team-card__title">Ivan Ivanov</h3>
+                <span class="team-card__prof">Director</span>
+                <span class="team-card__lang">
+                  Sprachen, die die Person kann
+                </span>
+                <a class="team-card__phone" href="tel:+71234567890">
+                  8 (123) 456 78 90
+                </a>
+                <a class="team-card__mail" href="mailto:info@mail.com">
+                  info@mail.com
+                </a>
+                <span class="team-card__text"> Lieblingszitat </span>
+              </div>
+            </article>
+          </li>
+          <li class="saving__slide swiper-slide">
+            <article class="team-card">
+              <div class="team-card__img">
+                <img src="images/content/team/1.jpg" alt="Ivan" />
+              </div>
+              <div class="team-card__info">
+                <h3 class="team-card__title">Ivan Ivanov</h3>
+                <span class="team-card__prof">Director</span>
+                <span class="team-card__lang">
+                  Sprachen, die die Person kann
+                </span>
+                <a class="team-card__phone" href="tel:+71234567890">
+                  8 (123) 456 78 90
+                </a>
+                <a class="team-card__mail" href="mailto:info@mail.com">
+                  info@mail.com
+                </a>
+                <span class="team-card__text"> Lieblingszitat </span>
+              </div>
+            </article>
+          </li>
+          <li class="saving__slide swiper-slide">
+            <article class="team-card">
+              <div class="team-card__img">
+                <img src="images/content/team/1.jpg" alt="Ivan" />
+              </div>
+              <div class="team-card__info">
+                <h3 class="team-card__title">Ivan Ivanov</h3>
+                <span class="team-card__prof">Director</span>
+                <span class="team-card__lang">
+                  Sprachen, die die Person kann
+                </span>
+                <a class="team-card__phone" href="tel:+71234567890">
+                  8 (123) 456 78 90
+                </a>
+                <a class="team-card__mail" href="mailto:info@mail.com">
+                  info@mail.com
+                </a>
+                <span class="team-card__text"> Lieblingszitat </span>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="swiper-button-next"
+        type="button"
+        aria-label="Следующий"
+      ></button>
+      <button
+        class="swiper-button-prev"
+        type="button"
+        aria-label="Предыдущий"
+      ></button>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__col">
+        <span class="footer__name">
+          Kurssuche <br />
+          Sprachkurse
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Kurssuche | Alle Kurse</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Probelektion Vereinbaren</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Unverbindliche Offerte</a>
+          </li>
+          <li class="footer__item mt45">
+            <a class="footer__link" href="#">Lerne Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Lerne Französisch | Apprends le français
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Lerne Englisch | Learn English</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Lerne Italienisch | Impara l'italiano
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Lerne Spanisch | Aprender español
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Weitere Sprachen</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          Firmenkurse <br />
+          B2B
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          Sprachtests <br />
+          Diplome | Zertifikate
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">TELC – Sprachnachweis Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">FIDE – Sprachnachweis Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">GOETHE – Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">DELF / DALF – Français</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Francais Professionnel DFP </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Cambridge – English</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Linguaskill – English </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">IELTS – English</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              CELI – Certificato di Conoscenza della Lingua Italiana
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              DELE – Diplomas de Español como Lengua Extranjera
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Inligua Sprachnachweise</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          Weitere <br />
+          Dienstleistungen
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Übersetzungen</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Dolmetscher</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Sprachaufenthalte</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Sprach – Kultur – Angebote</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Sprach – Kultur – Ferien </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Raumvermietung</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          über <br />
+          inlingua
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Geschichte | 53 Jahre</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Die inlingua Methode</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Unser Team</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Arbeiten mit uns</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> unsere Partner </a>
+          </li>
+          <li class="footer__item mt45">
+            <a class="footer__link" href="#">Kontakt</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Login </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--facebook"
+                href="#"
+                aria-label="Facebook"
+              ></a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--instagram"
+                href="#"
+                aria-label="Instagram"
+              ></a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--linkedin"
+                href="#"
+                aria-label="Linkedin"
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__right">
+          <ul class="footer__links">
+            <li>
+              <a class="footer__link" href="#">AGB</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Datenschutz</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Impressum</a>
+            </li>
+          </ul>
+
+          <div class="footer__by">
+            Разработка сайта:
+
+            <img src="images/logo-company.png" alt="Адванс Медиа" />
+          </div>
+          <button class="header__lang" type="button">DE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- Choices -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

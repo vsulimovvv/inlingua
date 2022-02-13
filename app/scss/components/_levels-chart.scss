@@ -1,0 +1,17 @@
+.chart {
+  @include adaptive-value('padding-top', 70, 40, 1);
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__title {
+    line-height: 1.4;
+  }
+
+  &__preview {
+    width: 100%;
+    max-height: 530px;
+
+    img {
+      @include img(contain);
+    }
+  }
+}

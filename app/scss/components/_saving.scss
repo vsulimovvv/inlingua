@@ -1,0 +1,53 @@
+.saving {
+  @include adaptive-value('padding-top', 30, 10, 1);
+  @include adaptive-value('padding-bottom', 90, 60, 1);
+
+  &__title {
+    text-align: center;
+    @include adaptive-value('margin-bottom', 60, 30, 1);
+  }
+
+  &__inner {
+    position: relative;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+
+      &::after {
+        @include elDef();
+        width: 23px;
+        height: 12px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include maskImage(url('../images/icons/chevron.svg'), contain);
+        background-color: var(--color-text);
+      }
+    }
+
+    .swiper-button-next {
+      right: 0;
+      &::after {
+        transform: translate(-50%, -50%) rotate(-90deg);
+      }
+    }
+    .swiper-button-prev {
+      left: 0;
+      &::after {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+  }
+
+  &__slider {
+    max-width: 1090px;
+  }
+  &__slides{
+    display: flex;
+  }
+
+  &__slide{
+    max-width: 340px;
+  }
+}

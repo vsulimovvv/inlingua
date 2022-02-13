@@ -1,0 +1,53 @@
+.hero-history {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: var(--color-white);
+
+  &--search {
+    min-height: 482px;
+
+    .hero-history__offer {
+      min-height: auto;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__undertitle {
+    margin-bottom: 20px;
+  }
+
+  &__offer {
+    max-width: 475px;
+    min-height: 482px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  &--location,
+  &--courses,
+  &--search {
+    color: var(--color-title);
+  }
+  &--prof-services {
+    color: var(--color-title);
+  }
+}

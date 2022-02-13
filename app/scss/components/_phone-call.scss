@@ -1,0 +1,36 @@
+.phone-call {
+  .help-card--phone {
+    .help-card__info {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      @include breakpointsMaxW($bp-768) {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    .help-card__box {
+      margin-bottom: 0;
+      
+      .help-card__btn {
+        display: block;
+      }
+
+      &:nth-child(2) {
+        margin-left: auto;
+
+        @include breakpointsMaxW($bp-768) {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .help-card__text {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

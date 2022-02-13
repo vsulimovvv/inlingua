@@ -1,0 +1,53 @@
+.uber {
+  min-height: 572px;
+  @include adaptive-value('padding-top', 88, 40, 1);
+  @include background(cover);
+
+  &__wrapper {
+    max-width: 478px;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: var(--color-text);
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 65px;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    color: #4c4c4c;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dadada;
+    position: relative;
+    
+    &:hover {
+      color: var(--color-black);
+
+      &::after {
+        background-color: var(--color-title);
+      }
+    }
+
+    &::before {
+      @include elDef();
+      width: 12px;
+      height: 6px;
+      right: 0;
+      top: 35%;
+      transform: translateY(-50%) rotate(-90deg);
+      @include maskImage(url('../images/icons/chevron.svg'), 100%);
+      background-color: var(--color-text);
+    }
+  }
+}

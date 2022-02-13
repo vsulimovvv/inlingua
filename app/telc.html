@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Choices -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Inlingua</title>
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <div class="overlay"></div>
+      <header class="header">
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo-mobile.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Kurssuche Sprachkurse
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Kurssuche Sprachkurse
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Kurssuche Sprachkurse
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Kurssuche Sprachkurse
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Sprachtests Diplome | Zertifikate
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Sprachtests Diplome | Zertifikate</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Sprachtests Diplome | Zertifikate</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Firmenkurse B2B
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Firmenkurse B2B </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Firmenkurse B2B </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            über inlingua
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> über inlingua </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> über inlingua </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Kontakt
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Kontakt</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__top">
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <a class="header__logo logo" href="#">
+          <picture>
+            <source
+              srcset="images/logo-mobile.png"
+              media="(max-width: 991px)"
+            />
+            <img src="images/logo.png" alt="Логотип" />
+          </picture>
+        </a>
+
+        <div class="header__tools">
+          <button class="header__lang" type="button">DE</button>
+          <button class="header__search" type="button">
+            <svg width="15" height="15">
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <button class="header__btn btn" type="button">Login</button>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Kurssuche Sprachkurse </a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Firmenkurse B2B</a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Sprachtests Diplome | Zertifikate
+              </a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">über inlingua</a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Kontakt</a>
+
+              <ul class="menu__dropdown dropdown dropdown--right">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section
+  class="hero-history-telc"
+  style="background-image: url('images/content/hero-telc-bg.jpg')"
+>
+  <div class="container">
+    <div class="hero-history__offer">
+      <h1 class="hero-history__title section-title">
+        Lorem ipsum dolor sit amet, consetetur
+      </h1>
+      <div class="hero-history__text">
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="approach approach--telc">
+  <h2 class="visually-hidden">Approach</h2>
+  <div class="container">
+    <ul class="approach__list">
+      <li class="approach__item">
+        <article class="approach-card approach-card--analysis">
+          <div class="approach-card__top">
+            <h3 class="approach-card__title">Analysis</h3>
+          </div>
+          <div class="approach-card__text">
+            <p>
+              Multiple language fluency is a huge asset for any business or
+              team. At inlingua we make sure to undertake an in-depth analysis
+              to determine your concrete objectives. This is done by collecting
+              your precise needs and setting up a complete and reliable initial
+              evaluation, both written and oral. The information collected
+              allows for the recommendation of a tailor-made program that will
+              fit your needs and lead to your goals.
+            </p>
+          </div>
+        </article>
+      </li>
+      <li class="approach__item">
+        <article class="approach-card approach-card--implementation">
+          <div class="approach-card__top">
+            <h3 class="approach-card__title">Implementation</h3>
+          </div>
+          <div class="approach-card__text">
+            <p>
+              After taking all parameters into account, the chosen training plan
+              is implemented inlingua takes care of the material and the
+              practical organisation of the courses.
+            </p>
+          </div>
+        </article>
+      </li>
+      <li class="approach__item">
+        <article class="approach-card approach-card--flexibility">
+          <div class="approach-card__top">
+            <h3 class="approach-card__title">Flexibility</h3>
+          </div>
+          <div class="approach-card__text">
+            <p>
+              The flexibility of the program during the training is ensured
+              through the permanent control of the coordinator, this allows for
+              smooth transitions during the training programme. In order to
+              maximize the efficiency of our language training courses, we make
+              provision for all training to be available either at our language
+              center or on your company’s premises.
+            </p>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="expand">
+  <div class="container">
+    <h2 class="visually-hidden">language courses</h2>
+
+    <div class="expand__text">
+      <p>
+        Expand your possibilities or simply improve your current language level
+        by participating in one of inlingua’s language courses customized for
+        business or companies.
+      </p>
+
+      <p>
+        With inlingua's corporate teaching programs, we take care to firstly
+        determine your course requirements and expectations before we develop a
+        customized language training program just for you or your team. Whatever
+        your schedule, our language trainers stand ready to assist you to reach
+        a new height of value-added professional success, wherever and whenever
+        is convenient.
+      </p>
+    </div>
+
+    <ul class="expand__list">
+      <li class="expand__item">
+        <article class="expand-card">
+          <div class="expand-card__img">
+            <img src="images/content/expand/1.jpg" alt="inlingua approach" />
+          </div>
+
+          <div class="expand-card__info">
+            <h3 class="expand-card__title">inlingua approach</h3>
+            <div class="expand-card__text">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+            <a class="expand-card__btn btn btn--arrow" href="#">
+              Mehr erfahren
+            </a>
+          </div>
+        </article>
+      </li>
+      <li class="expand__item">
+        <article class="expand-card">
+          <div class="expand-card__img">
+            <img src="images/content/expand/2.jpg" alt="Your advantages" />
+          </div>
+
+          <div class="expand-card__info">
+            <h3 class="expand-card__title">Your advantages</h3>
+            <div class="expand-card__text">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+            <a class="expand-card__btn btn btn--arrow" href="#">
+              Mehr erfahren
+            </a>
+          </div>
+        </article>
+      </li>
+      <li class="expand__item">
+        <article class="expand-card">
+          <div class="expand-card__img">
+            <img src="images/content/expand/3.jpg" alt="Quality Management" />
+          </div>
+
+          <div class="expand-card__info">
+            <h3 class="expand-card__title">Quality Management</h3>
+            <div class="expand-card__text">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+            <a class="expand-card__btn btn btn--arrow" href="#">
+              Mehr erfahren
+            </a>
+          </div>
+        </article>
+      </li>
+      <li class="expand__item">
+        <article class="expand-card">
+          <div class="expand-card__img">
+            <img src="images/content/expand/4.jpg" alt="References" />
+          </div>
+
+          <div class="expand-card__info">
+            <h3 class="expand-card__title">References</h3>
+            <div class="expand-card__text">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+            <a class="expand-card__btn btn btn--arrow" href="#">
+              Mehr erfahren
+            </a>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="telc-section">
+  <div class="container">
+    <div class="telc-section__wrapper">
+      <div class="telc-section__left">
+        <h2 class="telc-section__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="telc-section__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+            dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et magna aliquyam erat, sed diam voluptua. At vero eos
+            et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet,
+          </p>
+        </div>
+      </div>
+      <div class="telc-section__right">
+        <div class="telc-section__icon">
+          <img src="images/content/telc/1.png" alt="Лого" />
+        </div>
+        <div class="telc-section__person person-card">
+          <div class="person-card__img">
+            <img src="images/content/team/1.jpg" alt="person" />
+          </div>
+          <div class="person-card__info">
+            <blockquote class="person-card__quote">
+              <p>
+                As a firm thats built on trust, how we act and what we do is
+                keyto our success. This includes fostering a strong, diverse and
+                inclusive culture.
+              </p>
+            </blockquote>
+            <cite class="person-card__author">
+              Ralph Hammers, Group Chief Executive Offecer
+            </cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="personal-conversation">
+  <div class="container">
+    <div class="personal-conversation__wrapper">
+      <h2 class="personal-conversation__title">
+        Weil ein personliches Gesprach viel wert ist
+      </h2>
+      <div class="personal-conversation__text">
+        <p>
+          Was konnen wir fur Sie tun? Gerne kummern wir uns auf direktem Weg um
+          ihre Anliegen. Nutzen Sie folgende Moglichkeiten, um uns zu
+          kontktieren:
+        </p>
+      </div>
+
+      <ul class="conversation-box">
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--phone"
+            href="#"
+          >
+            <span class="conversation-box__name">044 235 00 50</span>
+            <span class="conversation-box__descr">
+              Montag bis Freitag | 08:00-18:00 Uhr
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--calendar"
+            href="#"
+          >
+            <span class="conversation-box__name"> Termin vereinbaren</span>
+            <span class="conversation-box__descr">
+              Fur ein personliches Gesprach
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--location"
+            href="#"
+          >
+            <span class="conversation-box__name">Geschaftsstellen</span>
+            <span class="conversation-box__descr">
+              Busuchen Sie uns in ihrer Nahe
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="telc-section telc-section--reverse">
+  <div class="container">
+    <div class="telc-section__wrapper">
+      <div class="telc-section__left">
+        <h2 class="telc-section__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="telc-section__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+            dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et magna aliquyam erat, sed diam voluptua. At vero eos
+            et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet,
+          </p>
+        </div>
+      </div>
+      <div class="telc-section__right">
+        <div class="telc-section__icon">
+          <img src="images/content/telc/2.png" alt="Лого" />
+        </div>
+        <div class="telc-section__person person-card">
+          <div class="person-card__img">
+            <img src="images/content/team/1.jpg" alt="person" />
+          </div>
+          <div class="person-card__info">
+            <blockquote class="person-card__quote">
+              <p>
+                As a firm thats built on trust, how we act and what we do is
+                keyto our success. This includes fostering a strong, diverse and
+                inclusive culture.
+              </p>
+            </blockquote>
+            <cite class="person-card__author">
+              Ralph Hammers, Group Chief Executive Offecer
+            </cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="personal-conversation">
+  <div class="container">
+    <div class="personal-conversation__wrapper">
+      <h2 class="personal-conversation__title">
+        Weil ein personliches Gesprach viel wert ist
+      </h2>
+      <div class="personal-conversation__text">
+        <p>
+          Was konnen wir fur Sie tun? Gerne kummern wir uns auf direktem Weg um
+          ihre Anliegen. Nutzen Sie folgende Moglichkeiten, um uns zu
+          kontktieren:
+        </p>
+      </div>
+
+      <ul class="conversation-box">
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--phone"
+            href="#"
+          >
+            <span class="conversation-box__name">044 235 00 50</span>
+            <span class="conversation-box__descr">
+              Montag bis Freitag | 08:00-18:00 Uhr
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--calendar"
+            href="#"
+          >
+            <span class="conversation-box__name"> Termin vereinbaren</span>
+            <span class="conversation-box__descr">
+              Fur ein personliches Gesprach
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--location"
+            href="#"
+          >
+            <span class="conversation-box__name">Geschaftsstellen</span>
+            <span class="conversation-box__descr">
+              Busuchen Sie uns in ihrer Nahe
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="telc-section">
+  <div class="container">
+    <div class="telc-section__wrapper">
+      <div class="telc-section__left">
+        <h2 class="telc-section__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="telc-section__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+            dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et magna aliquyam erat, sed diam voluptua. At vero eos
+            et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet,
+          </p>
+        </div>
+      </div>
+      <div class="telc-section__right">
+        <div class="telc-section__icon">
+          <img src="images/content/telc/3.png" alt="Лого" />
+        </div>
+        <div class="telc-section__person person-card">
+          <div class="person-card__img">
+            <img src="images/content/team/1.jpg" alt="person" />
+          </div>
+          <div class="person-card__info">
+            <blockquote class="person-card__quote">
+              <p>
+                As a firm thats built on trust, how we act and what we do is
+                keyto our success. This includes fostering a strong, diverse and
+                inclusive culture.
+              </p>
+            </blockquote>
+            <cite class="person-card__author">
+              Ralph Hammers, Group Chief Executive Offecer
+            </cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="personal-conversation">
+  <div class="container">
+    <div class="personal-conversation__wrapper">
+      <h2 class="personal-conversation__title">
+        Weil ein personliches Gesprach viel wert ist
+      </h2>
+      <div class="personal-conversation__text">
+        <p>
+          Was konnen wir fur Sie tun? Gerne kummern wir uns auf direktem Weg um
+          ihre Anliegen. Nutzen Sie folgende Moglichkeiten, um uns zu
+          kontktieren:
+        </p>
+      </div>
+
+      <ul class="conversation-box">
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--phone"
+            href="#"
+          >
+            <span class="conversation-box__name">044 235 00 50</span>
+            <span class="conversation-box__descr">
+              Montag bis Freitag | 08:00-18:00 Uhr
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--calendar"
+            href="#"
+          >
+            <span class="conversation-box__name"> Termin vereinbaren</span>
+            <span class="conversation-box__descr">
+              Fur ein personliches Gesprach
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--location"
+            href="#"
+          >
+            <span class="conversation-box__name">Geschaftsstellen</span>
+            <span class="conversation-box__descr">
+              Busuchen Sie uns in ihrer Nahe
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="telc-section telc-section--reverse">
+  <div class="container">
+    <div class="telc-section__wrapper">
+      <div class="telc-section__left">
+        <h2 class="telc-section__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="telc-section__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+            dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et magna aliquyam erat, sed diam voluptua. At vero eos
+            et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet,
+          </p>
+        </div>
+      </div>
+      <div class="telc-section__right">
+        <div class="telc-section__icon">
+          <img src="images/content/telc/4.png" alt="Лого" />
+        </div>
+        <div class="telc-section__person person-card">
+          <div class="person-card__img">
+            <img src="images/content/team/1.jpg" alt="person" />
+          </div>
+          <div class="person-card__info">
+            <blockquote class="person-card__quote">
+              <p>
+                As a firm thats built on trust, how we act and what we do is
+                keyto our success. This includes fostering a strong, diverse and
+                inclusive culture.
+              </p>
+            </blockquote>
+            <cite class="person-card__author">
+              Ralph Hammers, Group Chief Executive Offecer
+            </cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="personal-conversation">
+  <div class="container">
+    <div class="personal-conversation__wrapper">
+      <h2 class="personal-conversation__title">
+        Weil ein personliches Gesprach viel wert ist
+      </h2>
+      <div class="personal-conversation__text">
+        <p>
+          Was konnen wir fur Sie tun? Gerne kummern wir uns auf direktem Weg um
+          ihre Anliegen. Nutzen Sie folgende Moglichkeiten, um uns zu
+          kontktieren:
+        </p>
+      </div>
+
+      <ul class="conversation-box">
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--phone"
+            href="#"
+          >
+            <span class="conversation-box__name">044 235 00 50</span>
+            <span class="conversation-box__descr">
+              Montag bis Freitag | 08:00-18:00 Uhr
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--calendar"
+            href="#"
+          >
+            <span class="conversation-box__name"> Termin vereinbaren</span>
+            <span class="conversation-box__descr">
+              Fur ein personliches Gesprach
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--location"
+            href="#"
+          >
+            <span class="conversation-box__name">Geschaftsstellen</span>
+            <span class="conversation-box__descr">
+              Busuchen Sie uns in ihrer Nahe
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="telc-section">
+  <div class="container">
+    <div class="telc-section__wrapper">
+      <div class="telc-section__left">
+        <h2 class="telc-section__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="telc-section__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+            dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et magna aliquyam erat, sed diam voluptua. At vero eos
+            et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet,
+          </p>
+        </div>
+      </div>
+      <div class="telc-section__right">
+        <div class="telc-section__icon">
+          <img src="images/content/telc/5.png" alt="Лого" />
+        </div>
+        <div class="telc-section__person person-card">
+          <div class="person-card__img">
+            <img src="images/content/team/1.jpg" alt="person" />
+          </div>
+          <div class="person-card__info">
+            <blockquote class="person-card__quote">
+              <p>
+                As a firm thats built on trust, how we act and what we do is
+                keyto our success. This includes fostering a strong, diverse and
+                inclusive culture.
+              </p>
+            </blockquote>
+            <cite class="person-card__author">
+              Ralph Hammers, Group Chief Executive Offecer
+            </cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="personal-conversation">
+  <div class="container">
+    <div class="personal-conversation__wrapper">
+      <h2 class="personal-conversation__title">
+        Weil ein personliches Gesprach viel wert ist
+      </h2>
+      <div class="personal-conversation__text">
+        <p>
+          Was konnen wir fur Sie tun? Gerne kummern wir uns auf direktem Weg um
+          ihre Anliegen. Nutzen Sie folgende Moglichkeiten, um uns zu
+          kontktieren:
+        </p>
+      </div>
+
+      <ul class="conversation-box">
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--phone"
+            href="#"
+          >
+            <span class="conversation-box__name">044 235 00 50</span>
+            <span class="conversation-box__descr">
+              Montag bis Freitag | 08:00-18:00 Uhr
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--calendar"
+            href="#"
+          >
+            <span class="conversation-box__name"> Termin vereinbaren</span>
+            <span class="conversation-box__descr">
+              Fur ein personliches Gesprach
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--location"
+            href="#"
+          >
+            <span class="conversation-box__name">Geschaftsstellen</span>
+            <span class="conversation-box__descr">
+              Busuchen Sie uns in ihrer Nahe
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="telc-section telc-section--reverse">
+  <div class="container">
+    <div class="telc-section__wrapper">
+      <div class="telc-section__left">
+        <h2 class="telc-section__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="telc-section__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+            dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et magna aliquyam erat, sed diam voluptua. At vero eos
+            et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet,
+          </p>
+        </div>
+      </div>
+      <div class="telc-section__right">
+        <div class="telc-section__icon">
+          <img src="images/content/telc/6.png" alt="Лого" />
+        </div>
+        <div class="telc-section__person person-card">
+          <div class="person-card__img">
+            <img src="images/content/team/1.jpg" alt="person" />
+          </div>
+          <div class="person-card__info">
+            <blockquote class="person-card__quote">
+              <p>
+                As a firm thats built on trust, how we act and what we do is
+                keyto our success. This includes fostering a strong, diverse and
+                inclusive culture.
+              </p>
+            </blockquote>
+            <cite class="person-card__author">
+              Ralph Hammers, Group Chief Executive Offecer
+            </cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="personal-conversation">
+  <div class="container">
+    <div class="personal-conversation__wrapper">
+      <h2 class="personal-conversation__title">
+        Weil ein personliches Gesprach viel wert ist
+      </h2>
+      <div class="personal-conversation__text">
+        <p>
+          Was konnen wir fur Sie tun? Gerne kummern wir uns auf direktem Weg um
+          ihre Anliegen. Nutzen Sie folgende Moglichkeiten, um uns zu
+          kontktieren:
+        </p>
+      </div>
+
+      <ul class="conversation-box">
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--phone"
+            href="#"
+          >
+            <span class="conversation-box__name">044 235 00 50</span>
+            <span class="conversation-box__descr">
+              Montag bis Freitag | 08:00-18:00 Uhr
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--calendar"
+            href="#"
+          >
+            <span class="conversation-box__name"> Termin vereinbaren</span>
+            <span class="conversation-box__descr">
+              Fur ein personliches Gesprach
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--location"
+            href="#"
+          >
+            <span class="conversation-box__name">Geschaftsstellen</span>
+            <span class="conversation-box__descr">
+              Busuchen Sie uns in ihrer Nahe
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="telc-section mb70">
+  <div class="container">
+    <div class="telc-section__wrapper">
+      <div class="telc-section__left">
+        <h2 class="telc-section__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="telc-section__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+            dolor sit amet. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et magna aliquyam erat, sed diam voluptua. At vero eos
+            et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet,
+          </p>
+        </div>
+      </div>
+      <div class="telc-section__right">
+        <div class="telc-section__icon">
+          <img src="images/content/telc/7.png" alt="Лого" />
+        </div>
+        <div class="telc-section__person person-card">
+          <div class="person-card__img">
+            <img src="images/content/team/1.jpg" alt="person" />
+          </div>
+          <div class="person-card__info">
+            <blockquote class="person-card__quote">
+              <p>
+                As a firm thats built on trust, how we act and what we do is
+                keyto our success. This includes fostering a strong, diverse and
+                inclusive culture.
+              </p>
+            </blockquote>
+            <cite class="person-card__author">
+              Ralph Hammers, Group Chief Executive Offecer
+            </cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="personal-conversation">
+  <div class="container">
+    <div class="personal-conversation__wrapper">
+      <h2 class="personal-conversation__title">
+        Weil ein personliches Gesprach viel wert ist
+      </h2>
+      <div class="personal-conversation__text">
+        <p>
+          Was konnen wir fur Sie tun? Gerne kummern wir uns auf direktem Weg um
+          ihre Anliegen. Nutzen Sie folgende Moglichkeiten, um uns zu
+          kontktieren:
+        </p>
+      </div>
+
+      <ul class="conversation-box">
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--phone"
+            href="#"
+          >
+            <span class="conversation-box__name">044 235 00 50</span>
+            <span class="conversation-box__descr">
+              Montag bis Freitag | 08:00-18:00 Uhr
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--calendar"
+            href="#"
+          >
+            <span class="conversation-box__name"> Termin vereinbaren</span>
+            <span class="conversation-box__descr">
+              Fur ein personliches Gesprach
+            </span>
+          </a>
+        </li>
+        <li class="conversation-box__item">
+          <a
+            class="conversation-box__link conversation-box__link--location"
+            href="#"
+          >
+            <span class="conversation-box__name">Geschaftsstellen</span>
+            <span class="conversation-box__descr">
+              Busuchen Sie uns in ihrer Nahe
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__col">
+        <span class="footer__name">
+          Kurssuche <br />
+          Sprachkurse
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Kurssuche | Alle Kurse</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Probelektion Vereinbaren</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Unverbindliche Offerte</a>
+          </li>
+          <li class="footer__item mt45">
+            <a class="footer__link" href="#">Lerne Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Lerne Französisch | Apprends le français
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Lerne Englisch | Learn English</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Lerne Italienisch | Impara l'italiano
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Lerne Spanisch | Aprender español
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Weitere Sprachen</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          Firmenkurse <br />
+          B2B
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          Sprachtests <br />
+          Diplome | Zertifikate
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">TELC – Sprachnachweis Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">FIDE – Sprachnachweis Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">GOETHE – Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">DELF / DALF – Français</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Francais Professionnel DFP </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Cambridge – English</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Linguaskill – English </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">IELTS – English</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              CELI – Certificato di Conoscenza della Lingua Italiana
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              DELE – Diplomas de Español como Lengua Extranjera
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Inligua Sprachnachweise</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          Weitere <br />
+          Dienstleistungen
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Übersetzungen</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Dolmetscher</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Sprachaufenthalte</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Sprach – Kultur – Angebote</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Sprach – Kultur – Ferien </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Raumvermietung</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          über <br />
+          inlingua
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Geschichte | 53 Jahre</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Die inlingua Methode</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Unser Team</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Arbeiten mit uns</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> unsere Partner </a>
+          </li>
+          <li class="footer__item mt45">
+            <a class="footer__link" href="#">Kontakt</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Login </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--facebook"
+                href="#"
+                aria-label="Facebook"
+              ></a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--instagram"
+                href="#"
+                aria-label="Instagram"
+              ></a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--linkedin"
+                href="#"
+                aria-label="Linkedin"
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__right">
+          <ul class="footer__links">
+            <li>
+              <a class="footer__link" href="#">AGB</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Datenschutz</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Impressum</a>
+            </li>
+          </ul>
+
+          <div class="footer__by">
+            Разработка сайта:
+
+            <img src="images/logo-company.png" alt="Адванс Медиа" />
+          </div>
+          <button class="header__lang" type="button">DE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- Choices -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

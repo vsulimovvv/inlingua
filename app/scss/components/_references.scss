@@ -1,0 +1,26 @@
+.references {
+  @include adaptive-value('padding-top', 60, 40, 1);
+  @include adaptive-value('padding-bottom', 90, 50, 1);
+
+  &__title {
+    @include adaptive-value('margin-bottom', 33, 20, 1);
+  }
+
+  &__undertitle {
+    @include adaptive-value('font-size', 20, 16, 1);
+    margin-bottom: 70px;
+    color: #3f3f3f;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 50px 150px;
+    flex-wrap: wrap;
+
+    @include adaptive-value('column-gap', 150, 50, 1);
+  }
+
+  &__item {
+  }
+}

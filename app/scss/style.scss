@@ -1,0 +1,76 @@
+@import 'libs';
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'global';
+
+@import './animations';
+
+// * ===== Other components
+@import './components/breadcrumbs';
+@import './components/menu.scss';
+@import './components/socials.scss';
+@import './components/accordion.scss';
+@import './components/map.scss';
+@import './components/grid-content.scss';
+@import './components/lang-courses.scss';
+@import './components/search-form.scss';
+@import './components/custom-select.scss';
+@import './components/mobile-menu.scss';
+
+// * ===== Card Components
+@import './components/card-lang-courses.scss';
+@import './components/card-team.scss';
+@import './components/card-hiring.scss';
+@import './components/card-location.scss';
+@import './components/card-expand.scss';
+@import './components/card-approach.scss';
+@import './components/card-management.scss';
+@import './components/card-person.scss';
+@import './components/card-working.scss';
+@import './components/card-room.scss';
+@import './components/card-online.scss';
+@import './components/card-help.scss';
+@import './components/card-types.scss';
+
+// * ===== Section Components
+@import './components/footer';
+@import './components/header.scss';
+@import './components/hero.scss';
+@import './components/section-bg.scss';
+@import './components/section-def.scss';
+@import './components/partners.scss';
+@import './components/uber.scss';
+@import './components/contacts.scss';
+@import './components/hero-history.scss';
+@import './components/location.scss';
+@import './components/our-centers.scss';
+@import './components/expand.scss';
+@import './components/approach.scss';
+@import './components/advantages.scss';
+@import './components/management.scss';
+@import './components/contact-us.scss';
+@import './components/references.scss';
+@import './components/information.scss';
+@import './components/personal-conversation.scss';
+@import './components/telc-section-def.scss';
+@import './components/employees.scss';
+@import './components/success.scss';
+@import './components/working.scss';
+@import './components/room.scss';
+@import './components/levels.scss';
+@import './components/online.scss';
+@import './components/help.scss';
+@import './components/data-table.scss';
+@import './components/teaching-types.scss';
+@import './components/levels-chart.scss';
+@import './components/introduction.scss';
+@import './components/phone-call.scss';
+@import './components/contact.scss';
+@import './components/form-submit.scss';
+@import './components/leitbild.scss';
+@import './components/history.scss';
+@import './components/methods.scss';
+@import './components/team.scss';
+@import './components/saving.scss';

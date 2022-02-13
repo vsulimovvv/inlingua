@@ -1,0 +1,40 @@
+.success {
+  @include adaptive-value('padding-top', 90, 50, 1);
+
+  &__title {
+    @include adaptive-value('margin-bottom', 36, 20, 1);
+  }
+
+  &__undertitle {
+    @include adaptive-value('margin-bottom', 51, 30, 1);
+    color: #383838;
+  }
+
+  &__inner {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__left {
+    height: 100%;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 10px solid var(--color-bg);
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 600px;
+      min-height: 300px;
+    }
+  }
+}

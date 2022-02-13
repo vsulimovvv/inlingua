@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Choices -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Inlingua</title>
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <div class="overlay"></div>
+      <header class="header">
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo-mobile.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Kurssuche Sprachkurse
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Kurssuche Sprachkurse
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Kurssuche Sprachkurse
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Kurssuche Sprachkurse
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Sprachtests Diplome | Zertifikate
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Sprachtests Diplome | Zertifikate</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Sprachtests Diplome | Zertifikate</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Firmenkurse B2B
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Firmenkurse B2B </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Firmenkurse B2B </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            über inlingua
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> über inlingua </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> über inlingua </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Kontakt
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Kontakt</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__top">
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <a class="header__logo logo" href="#">
+          <picture>
+            <source
+              srcset="images/logo-mobile.png"
+              media="(max-width: 991px)"
+            />
+            <img src="images/logo.png" alt="Логотип" />
+          </picture>
+        </a>
+
+        <div class="header__tools">
+          <button class="header__lang" type="button">DE</button>
+          <button class="header__search" type="button">
+            <svg width="15" height="15">
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <button class="header__btn btn" type="button">Login</button>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Kurssuche Sprachkurse </a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Firmenkurse B2B</a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Sprachtests Diplome | Zertifikate
+              </a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">über inlingua</a>
+
+              <ul class="menu__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Kontakt</a>
+
+              <ul class="menu__dropdown dropdown dropdown--right">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Kurssuche Sprachkurse</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="hero hero--main">
+  <div class="container">
+    <div class="hero__slider swiper">
+      <ul class="hero__slides swiper-wrapper">
+        <li class="hero__slide swiper-slide">
+          <div class="container">
+            <div class="hero__inner">
+              <div class="hero__offer">
+                <h1 class="hero__title section-title">
+                  Kurssuche | Sprachkurse
+                </h1>
+                <div class="hero__text">
+                  <p>
+                    Lernen durch interaktives Tutorial mit einem persönlichen
+                    Lehrer, wo es bequem ist und wann es bequem ist
+                  </p>
+                </div>
+                <a class="section-bg__btn btn" href="#"> Mehr erfahren </a>
+              </div>
+
+              <div class="hero__preview">
+                <img
+                  src="images/content/hero/woman.png"
+                  alt="Woman with books"
+                />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hero__slide swiper-slide">
+          <div class="container">
+            <div class="hero__inner">
+              <div class="hero__offer">
+                <h1 class="hero__title section-title">
+                  Kurssuche | Sprachkurse
+                </h1>
+                <div class="hero__text">
+                  <p>
+                    Lernen durch interaktives Tutorial mit einem persönlichen
+                    Lehrer, wo es bequem ist und wann es bequem ist
+                  </p>
+                </div>
+                <a class="section-bg__btn btn" href="#"> Mehr erfahren </a>
+              </div>
+
+              <div class="hero__preview">
+                <img
+                  src="images/content/hero/woman.png"
+                  alt="Woman with books"
+                />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hero__slide swiper-slide">
+          <div class="container">
+            <div class="hero__inner">
+              <div class="hero__offer">
+                <h1 class="hero__title section-title">
+                  Kurssuche | Sprachkurse
+                </h1>
+                <div class="hero__text">
+                  <p>
+                    Lernen durch interaktives Tutorial mit einem persönlichen
+                    Lehrer, wo es bequem ist und wann es bequem ist
+                  </p>
+                </div>
+                <a class="section-bg__btn btn" href="#"> Mehr erfahren </a>
+              </div>
+
+              <div class="hero__preview">
+                <img
+                  src="images/content/hero/woman.png"
+                  alt="Woman with books"
+                />
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="hero__arrows">
+        <button class="swiper-button-prev" type="button" aria-label="prev"></button>
+        <button class="swiper-button-next" type="button" aria-label="next"></button>
+      </div>
+    </div>
+
+    <div class="search-block search-block--bg">
+      <form class="search-form">
+        <div class="search-form__group">
+          <span class="search-form__label">KURSSPRACHE</span>
+          <select class="search-form__select select" name="kursspache" id="kursspache">
+            <option value="1">Kursspache</option>
+            <option value="2">Kursspache</option>
+            <option value="3">Kursspache</option>
+          </select>
+        </div>
+        <div class="search-form__group">
+          <span class="search-form__label">KURSNIVEAU</span>
+          <select class="search-form__select select" name="kursniveau" id="kursniveau">
+            <option value="1">Kursniveau</option>
+            <option value="2">Kursniveau</option>
+            <option value="3">Kursniveau</option>
+          </select>
+        </div>
+        <div class="search-form__group">
+          <span class="search-form__label">KURSFORM</span>
+          <select class="search-form__select select" name="kursform" id="kursform">
+            <option value="1">Kursform</option>
+            <option value="2">Kursform</option>
+            <option value="3">Kursform</option>
+          </select>
+        </div>
+
+        <button class="search-form__btn btn" type="submit">Suchen</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+        <section
+  class="section-bg"
+  style="background-image: url('images/content/bg-1.jpg')"
+>
+  <div class="container">
+    <div class="section-bg__wrapper">
+      <h2 class="section-bg__title section-title">
+        Kostenloser Inlingua Einstufungstest
+      </h2>
+      <div class="section-bg__text">
+        <p>
+          Mit dem inlingua Online Sprachtest erfahren Sie kostenlos und
+          unverbindlich, wo Sie in den Sprachniveaus von A1-C2 stehen. Zudem
+          können Sie von inlingua eine detaillierte Auswertung der Resultate
+          erhalten.
+        </p>
+      </div>
+      <a class="section-bg__btn btn" href="#"> Zum Einstufungstest </a>
+    </div>
+  </div>
+</section>
+
+        <section class="section-def">
+  <div class="container">
+    <div class="section-def__wrapper">
+      <div class="section-def__offer">
+        <h2 class="section-def__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="section-def__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <a class="section-def__btn btn btn--arrow" href="#"> Mehr erfahren </a>
+      </div>
+      <div class="section-def__preview">
+        <img src="images/content/main-page-img/greatbritain.jpg" alt="Women with England" />
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="section-def section-def--reverse">
+  <div class="container">
+    <div class="section-def__wrapper">
+      <div class="section-def__preview">
+        <img src="images/content/main-page-img/france.jpg" alt="Women with England" />
+      </div>
+      <div class="section-def__offer">
+        <h2 class="section-def__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="section-def__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <a class="section-def__btn btn btn--arrow" href="#"> Mehr erfahren </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="section-def mb70">
+  <div class="container">
+    <div class="section-def__wrapper">
+      <div class="section-def__offer">
+        <h2 class="section-def__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="section-def__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <a class="section-def__btn btn btn--arrow" href="#"> Mehr erfahren </a>
+      </div>
+      <div class="section-def__preview">
+        <img src="images/content/main-page-img/italy.jpg" alt="Women with Italy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section
+  class="section-bg section-bg--small"
+  style="background-image: url('images/content/bg-2.jpg')"
+>
+  <div class="container">
+    <div class="section-bg__wrapper">
+      <h2 class="section-bg__title section-title">Unverbindliche Offerte</h2>
+      <div class="section-bg__text">
+        <p>
+          Mit dem inlingua Online Sprachtest erfahren Sie kostenlos und
+          unverbindlich, wo Sie in den Sprachniveaus von A1-C2 stehen. Zudem
+          können Sie von inlingua eine detaillierte Auswertung der Resultate
+          erhalten.
+        </p>
+      </div>
+      <a class="section-bg__btn btn" href="#"> Zum Einstufungstest </a>
+    </div>
+  </div>
+</section>
+
+        <section
+  class="uber"
+  style="background-image: url('images/content/uber-bg.jpg')"
+>
+  <div class="container">
+    <div class="uber__wrapper">
+      <h2 class="uber__title section-title">Über inlingua</h2>
+      <div class="uber__text">
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores.
+        </p>
+      </div>
+
+      <ul class="uber__list">
+        <li class="uber__item">
+          <a class="uber__link" href="#">Kapitel 1</a>
+        </li>
+        <li class="uber__item">
+          <a class="uber__link" href="#">Kapitel 2</a>
+        </li>
+        <li class="uber__item">
+          <a class="uber__link" href="#">Kapitel 3</a>
+        </li>
+        <li class="uber__item">
+          <a class="uber__link" href="#">Kapitel 4</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="section-def section-def--reverse">
+  <div class="container">
+    <div class="section-def__wrapper">
+      <div class="section-def__preview">
+        <img src="images/content/main-page-img/woman-learn-online.jpg" alt="woman-learn-online" />
+      </div>
+      <div class="section-def__offer">
+        <h2 class="section-def__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="section-def__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <a class="section-def__btn btn btn--arrow" href="#"> Mehr erfahren </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="section-def">
+  <div class="container">
+    <div class="section-def__wrapper">
+      <div class="section-def__offer">
+        <h2 class="section-def__title section-title">
+          Lorem ipsum dolor sit amet, consetetur
+        </h2>
+        <div class="section-def__text">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <a class="section-def__btn btn btn--arrow" href="#"> Mehr erfahren </a>
+      </div>
+      <div class="section-def__preview">
+        <img
+          src="images/content/main-page-img/woman-learn-offline.jpg"
+          alt="woman-learn-offline"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="partners">
+  <div class="container">
+    <ul class="partners__items">
+      <li class="partners__item">
+        <img src="images/content/partners/1.png" alt="Партнер 1" />
+      </li>
+      <li class="partners__item">
+        <img src="images/content/partners/2.png" alt="Партнер 1" />
+      </li>
+      <li class="partners__item">
+        <img src="images/content/partners/3.png" alt="Партнер 1" />
+      </li>
+      <li class="partners__item">
+        <img src="images/content/partners/4.png" alt="Партнер 1" />
+      </li>
+      <li class="partners__item">
+        <img src="images/content/partners/5.png" alt="Партнер 1" />
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="contacts">
+  <div class="container">
+    <div class="contacts__wrapper">
+      <div class="contacts__offer">
+        <h2 class="contacts__title section-title">inlingua Leman</h2>
+
+        <div class="contacts__accordion accordion">
+          <a class="contacts__control accordion__control" href="#">
+            Informationen
+          </a>
+
+          <div class="contacts__control__content accordion__content">
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--location">
+                Genfergasse 3+5, 3011 Bern <br />
+                +41 21 323 94 15
+              </li>
+              <li class="contacts__item contacts__item--location">
+                Panoramastrasse 1, 3600 Thun <br />
+                +41 22 732 40 20
+              </li>
+              <li class="contacts__item contacts__item--mail">
+                <a href="mailto:Kontaktieren-Sie-uns">Kontaktieren-Sie uns</a>
+              </li>
+              <li class="contacts__item contacts__item--schedule">
+                Offnungzeiten des Sekretariats in Lausanne <br />
+                Mo. bis Fr. 8h30 - 12h30 | 13h30 - 17h30
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacts__accordion accordion">
+          <a class="contacts__control accordion__control" href="#">
+            Anfahrt Lausanne
+          </a>
+
+          <div class="contacts__control__content accordion__content">
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--location">
+                Genfergasse 3+5, 3011 Bern <br />
+                +41 21 323 94 15
+              </li>
+              <li class="contacts__item contacts__item--location">
+                Panoramastrasse 1, 3600 Thun <br />
+                +41 22 732 40 20
+              </li>
+              <li class="contacts__item contacts__item--mail">
+                <a href="mailto:Kontaktieren-Sie-uns">Kontaktieren-Sie uns</a>
+              </li>
+              <li class="contacts__item contacts__item--schedule">
+                Offnungzeiten des Sekretariats in Lausanne <br />
+                Mo. bis Fr. 8h30 - 12h30 | 13h30 - 17h30
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacts__accordion accordion">
+          <a class="contacts__control accordion__control" href="#">
+            Anfahrt Genf
+          </a>
+
+          <div class="contacts__control__content accordion__content">
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--location">
+                Genfergasse 3+5, 3011 Bern <br />
+                +41 21 323 94 15
+              </li>
+              <li class="contacts__item contacts__item--location">
+                Panoramastrasse 1, 3600 Thun <br />
+                +41 22 732 40 20
+              </li>
+              <li class="contacts__item contacts__item--mail">
+                <a href="mailto:Kontaktieren-Sie-uns">Kontaktieren-Sie uns</a>
+              </li>
+              <li class="contacts__item contacts__item--schedule">
+                Offnungzeiten des Sekretariats in Lausanne <br />
+                Mo. bis Fr. 8h30 - 12h30 | 13h30 - 17h30
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__map map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A124c6dc3fec624b1dd5a5045d3bd871fc78ad16c80c1a5c20ebf923bb1c493c6&amp;source=constructor"
+          width="700"
+          height="700"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__col">
+        <span class="footer__name">
+          Kurssuche <br />
+          Sprachkurse
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Kurssuche | Alle Kurse</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Probelektion Vereinbaren</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Unverbindliche Offerte</a>
+          </li>
+          <li class="footer__item mt45">
+            <a class="footer__link" href="#">Lerne Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Lerne Französisch | Apprends le français
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Lerne Englisch | Learn English</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Lerne Italienisch | Impara l'italiano
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Lerne Spanisch | Aprender español
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Weitere Sprachen</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          Firmenkurse <br />
+          B2B
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">xxxx xxxx xxxx</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          Sprachtests <br />
+          Diplome | Zertifikate
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">TELC – Sprachnachweis Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">FIDE – Sprachnachweis Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">GOETHE – Deutsch</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">DELF / DALF – Français</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Francais Professionnel DFP </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Cambridge – English</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Linguaskill – English </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">IELTS – English</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              CELI – Certificato di Conoscenza della Lingua Italiana
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              DELE – Diplomas de Español como Lengua Extranjera
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Inligua Sprachnachweise</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          Weitere <br />
+          Dienstleistungen
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Übersetzungen</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Dolmetscher</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Sprachaufenthalte</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Sprach – Kultur – Angebote</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Sprach – Kultur – Ferien </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Raumvermietung</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">
+          über <br />
+          inlingua
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Geschichte | 53 Jahre</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Die inlingua Methode</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Unser Team</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Arbeiten mit uns</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> unsere Partner </a>
+          </li>
+          <li class="footer__item mt45">
+            <a class="footer__link" href="#">Kontakt</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Login </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--facebook"
+                href="#"
+                aria-label="Facebook"
+              ></a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--instagram"
+                href="#"
+                aria-label="Instagram"
+              ></a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--linkedin"
+                href="#"
+                aria-label="Linkedin"
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__right">
+          <ul class="footer__links">
+            <li>
+              <a class="footer__link" href="#">AGB</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Datenschutz</a>
+            </li>
+            <li>
+              <a class="footer__link" href="#">Impressum</a>
+            </li>
+          </ul>
+
+          <div class="footer__by">
+            Разработка сайта:
+
+            <img src="images/logo-company.png" alt="Адванс Медиа" />
+          </div>
+          <button class="header__lang" type="button">DE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- Choices -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

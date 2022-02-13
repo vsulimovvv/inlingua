@@ -1,0 +1,40 @@
+.online {
+  color: var(--color-title);
+  @include adaptive-value('padding-top', 70, 40, 1);
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__title {
+    @include adaptive-value('margin-bottom', 33, 20, 1);
+  }
+
+  &__undertitle {
+    @include adaptive-value('margin-bottom', 33, 20, 1);
+  }
+  &__text {
+    @include adaptive-value('margin-bottom', 60, 30, 1);
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    justify-content: space-between;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      justify-content: center;
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+  }
+}

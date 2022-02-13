@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Inlingua</title>
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <div class="overlay"></div>
+      @include('./components/_header.html')
+
+      <main class="main">
+        @include('./components/prof-services/_hero.html')
+        @include('./components/prof-services/_expand.html')
+        @include('./components/prof-services/_employees.html')
+        @include('./components/prof-services/_success.html')
+        @include('./components/prof-services/_working.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

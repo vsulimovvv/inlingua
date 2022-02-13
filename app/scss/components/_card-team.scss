@@ -1,0 +1,60 @@
+.team-card {
+  max-width: 395px;
+  width: 100%;
+  display: flex;
+  @include adaptive-value('gap', 30, 20, 1);
+
+  &__title {
+    @include adaptive-value('font-size', 26, 18, 1);
+  }
+
+  &__info {
+    color: var(--color-title);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 25px;
+  }
+
+  &__img {
+    flex-shrink: 0;
+    @include adaptive-value('width', 165, 100, 1);
+    @include adaptive-value('height', 165, 100, 1);
+
+    img {
+      border-radius: 50%;
+      @include img(cover);
+    }
+  }
+
+  &__prof {
+    margin-bottom: 10px;
+  }
+
+  &__phone,
+  &__mail {
+    position: relative;
+    padding-left: 20px;
+
+    &::after {
+      @include elDef();
+      width: 14px;
+      height: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: var(--color-title);
+    }
+  }
+  &__phone {
+    &::after {
+      @include maskImage(url('../images/icons/phone.svg'), contain);
+    }
+  }
+  &__mail {
+    &::after {
+      @include maskImage(url('../images/icons/email.svg'), contain);
+    }
+  }
+}

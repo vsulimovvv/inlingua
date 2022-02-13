@@ -1,0 +1,21 @@
+// Color
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-title: #323232;
+  --color-bg: #f2f2f2;;
+  --color-accent: #fc5000;
+  --color-text: #383838;
+}
+
+// * breakpointsMaxW
+$bp-container: 1230px;
+$bp-991: 991.98px;
+$bp-768: 767.98px;
+$bp-576: 576px;
+$bp-375: 375.98px;
+
+// *=== Fonts
+$SuisseIntl: 'Suisse Int\'l';
+$SuisseWorks: 'Suisse Works';

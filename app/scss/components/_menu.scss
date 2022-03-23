@@ -65,9 +65,22 @@
     left: 0;
     transition: 350ms ease;
     transform: translateY(-10px);
+    top: 30px;
 
     opacity: 0;
     visibility: hidden;
+    transition-delay: 150ms;
+    
+    &:hover {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      transition-delay: 150ms;
+
+      &--right {
+        transform: translateY(0) translateX(-150px);
+      }
+    }
 
     &--right {
       transform: translateX(-160px);
